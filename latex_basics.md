@@ -1,15 +1,18 @@
-#LaTeX Basics
+# LaTeX Basics
 
-##Initial Config
+## Initial Config
 
-##Units
+## Units
 -Units should not be put in math mode, this may cause spacing issues
--'siunitx' formats numbers and units consistently so you do not need to wory about spacing, typography, or unit symbols. Type out the unit's full name, and it will be rendered with the proper subscripts.
-'#include this in the preamble
-\usepackage{siunitx}'
+-`siunitx` formats numbers and units consistently so you do not need to wory about spacing, typography, or unit symbols. Type out the unit's full name, and it will be rendered with the proper subscripts.
+``` latex
+#include this in the preamble
+\usepackage{siunitx}
+```
 
 As an example, this code:
-'\documentclass{article}
+```latex
+\documentclass{article}
 \usepackage{siunitx}
 
 \begin{document}
@@ -20,12 +23,18 @@ number: \num{103007.234}
 
 unit: \unit{\milli\liter}
 
-\end{document}'
+\end{document}
+```
 
 will produce this result:
+> speed: 30 km/h
+> number : 103,007.234
+> unit: mL
 
-##Figures
+## Figures
 
-##Tables
+## Tables
 
-##Tips and Tricks
+## Tips and Tricks
+
+### Acknowledgments
